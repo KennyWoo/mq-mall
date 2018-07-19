@@ -20,6 +20,8 @@
 
 	<modules>
 		<module>mq-mall-discsvr</module>
+		<module>mq-mall-confsvr</module>
+		<module>mq-mall-ucsvr</module>
 	</modules>
 
 	<properties>
