@@ -1,0 +1,20 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: mq-mall-confsvr
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:conf/
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
